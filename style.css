@@ -1,0 +1,72 @@
+body {
+    padding-top: 4vh;
+}
+
+header {
+  align-items: center;
+
+}
+
+.topImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 10vh;
+
+}
+
+.headerText {
+  text-align: center;
+  padding-top: 2vh;
+  padding-left: 2vw;
+}
+
+h2 {
+  color: rgb(251, 24, 33);
+}
+
+h3 {
+  font-style: italic;
+}
+
+.menuImg {
+  display: block;
+  
+  height: auto;
+  
+  max-width: 20vw;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.orderButton {
+  border-radius: 40%;
+  background-color: lightblue;
+  padding: 5%;
+  border: 2px solid black;
+}
+
+.col-itemButton{
+  position: relative;
+  text-align: left;
+}
+.col-price{
+  position: relative;
+  text-align: center;
+  width: 30vw;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.row-margin{
+  margin-top: 5vh;
+}
+
+.col-img {
+  min-width: 20vw;
+  min-height: 10vh;
+}
+
