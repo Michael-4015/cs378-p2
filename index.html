@@ -11,6 +11,7 @@
     <link rel="stylesheet" type = "text/css" href="css/style.css">
   </head>
   <!-- Implement from below -->
+  <script src= "script.js"></script>
   <body>
     <header>
       <img class = "topImg" src= "images/wawa-logo.png" alt = "Wawa Logo">
@@ -29,14 +30,16 @@
         </div>
         <div class="col col-itemButton">
           <span>Hoagie</span>
-          <div class = "bottom">
-            <button class = "orderButton" type="button" class="btn btn-primary">order</button>
-          </div>
           
          
         </div>
         <div class="col col-price">
           <span>$8</span>
+          <div class = "bottomPrice">
+            <button class = "orderButton" onclick = "decrement(0)" type="button" class="btn btn-primary">-</button>
+            <span id = "numOrdered0"> 0 </span>
+            <button class = "orderButton" onclick = "increment(0)" type="button" class="btn btn-primary">+</button> 
+          </div>
         </div>
       </div>
       <div class="row row-margin">
@@ -45,12 +48,14 @@
         </div>
         <div class="col col-itemButton">
           <span>Coffee</span>
-          <div class = "bottom">
-            <button class = "orderButton" type="button" class="btn btn-primary">order</button>
-          </div>
         </div>
         <div class="col col-price">
           <span>$3</span>
+          <div class = "bottomPrice">
+            <button class = "orderButton" onclick = "decrement(1)" type="button" class="btn btn-primary">-</button>
+            <span id = "numOrdered1"> 0 </span>
+            <button class = "orderButton" onclick = "increment(1)" type="button" class="btn btn-primary">+</button> 
+          </div>
         </div>
       </div>
       <div class="row row-margin">
@@ -59,12 +64,14 @@
         </div>
         <div class="col col-itemButton">
           <span>Soup</span>
-          <div class = "bottom">
-            <button class = "orderButton" type="button" class="btn btn-primary">order</button>
-          </div>
         </div>
         <div class="col col-price">
           <span>$6</span>
+          <div class = "bottomPrice">
+            <button class = "orderButton" onclick = "decrement(2)" type="button" class="btn btn-primary">-</button>
+            <span id = "numOrdered2" > 0 </span>
+            <button class = "orderButton" onclick = "increment(2)" type="button" class="btn btn-primary">+</button> 
+          </div>
         </div>
       </div>
       <div class="row row-margin">
@@ -73,14 +80,35 @@
         </div>
         <div class="col col-itemButton">
           <span>Herr's Chips</span>
-          <div class = "bottom">
-            <button class = "orderButton" type="button" class="btn btn-primary">order</button>
-          </div>
         </div>
         <div class="col col-price">
           <span>$2</span>
+          <div class = "bottomPrice">
+            <button class = "orderButton" onclick = "decrement(3)" type="button" class="btn btn-primary">-</button>
+            <span id = "numOrdered3"> 0 </span>
+            <button class = "orderButton" onclick = "increment(3)" type="button" class="btn btn-primary">+</button> 
+          </div>
         </div>
+        <div class="row row-margin">
+          <div class="col col-img">
+            <span>Subtotal</span>
+            <span id = "subtotal">$0</span>
+          </div>
+          <div class="col col-itemButton">
+          
+              <button class = "subOrderButton" onclick = "order()" type="button" class="btn btn-primary">order</button>
+      
+          </div>
+          <div class="col col-price">
+            
+              <button class = "clearButton" onclick = "clearAll()" type="button" class="btn btn-primary">Clear all</button>
+            
+            </div>
+          </div>
       </div>
+    </div>
+    <div> 
+      
     </div>
     </div>
     
